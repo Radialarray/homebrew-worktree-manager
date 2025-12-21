@@ -1,19 +1,19 @@
 class WorktreeManager < Formula
   desc "Fast, intuitive CLI for managing Git worktrees"
   homepage "https://github.com/Radialarray/worktree-manager"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/Radialarray/worktree-manager/releases/download/v0.1.0/worktree-manager-aarch64-apple-darwin.tar.xz"
-    sha256 "718a02babfa2e309bc62bbe566690823081e092d5118c1ee68e5ea446bfc3923"
+    url "https://github.com/Radialarray/worktree-manager/releases/download/v0.1.1/worktree-manager-aarch64-apple-darwin.tar.xz"
+    sha256 "4457e256124edc6c04a45c4565964155ee6b8bc6b697ed431470070505f50962"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Radialarray/worktree-manager/releases/download/v0.1.0/worktree-manager-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "3eeed4e9b9faef00381062f1c296373c291a2a7b556df05745afaa784b34c610"
+      url "https://github.com/Radialarray/worktree-manager/releases/download/v0.1.1/worktree-manager-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "eddfa277ea9551bb0925fec83c1bb6014e4318969e2a8d53dd696bc308ce7df3"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Radialarray/worktree-manager/releases/download/v0.1.0/worktree-manager-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c9508975fdecec56363840e27517c269d095de9a6bdbbab3e9ae4905afc99b8c"
+      url "https://github.com/Radialarray/worktree-manager/releases/download/v0.1.1/worktree-manager-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "92297fab0902d08235b297216244daf4ef0652dfa19b1a2b24a5bb938ccb2d9e"
     end
   end
   license "MIT"
