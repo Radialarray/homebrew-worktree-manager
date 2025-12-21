@@ -4,16 +4,16 @@ class WorktreeManager < Formula
   version "0.1.1"
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/Radialarray/worktree-manager/releases/download/v0.1.1/worktree-manager-aarch64-apple-darwin.tar.xz"
-    sha256 "4457e256124edc6c04a45c4565964155ee6b8bc6b697ed431470070505f50962"
+    sha256 "614131e30e36f4006ffe74f0e2a7dd6f6eb3556e8ba459430a916f58f620b5f0"
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/Radialarray/worktree-manager/releases/download/v0.1.1/worktree-manager-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "eddfa277ea9551bb0925fec83c1bb6014e4318969e2a8d53dd696bc308ce7df3"
+      sha256 "9b731b0f440ea1265546a78101b7756a8a5ae9d9265830894040be4a5ac9781f"
     end
     if Hardware::CPU.intel?
       url "https://github.com/Radialarray/worktree-manager/releases/download/v0.1.1/worktree-manager-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "92297fab0902d08235b297216244daf4ef0652dfa19b1a2b24a5bb938ccb2d9e"
+      sha256 "7e32501127aae46390883641d9b9556fdfb5be0d7b4a4d803a9d4453028077ee"
     end
   end
   license "MIT"
